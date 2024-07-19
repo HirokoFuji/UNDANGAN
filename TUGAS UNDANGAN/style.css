@@ -1,0 +1,130 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+div.container {
+    margin: 0px auto;
+}
+
+section.page {
+    width: 100%;
+    min-height: 100vh;
+    background-color: salmon;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.page.one {
+    background-image: url(wedding-photo-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+p,h1 {
+    text-align: center;
+}
+
+body.dark-mode {
+    background-color: #393b41;
+    color: #ffffff;
+}
+
+#dark-mode-toggle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    color: #34363b;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+body.dark-mode #dark-mode-toggle {
+    background-color: #323338;
+    color: #ffffff;
+}
+
+div.countdown{
+    text-align: center;
+    text-decoration: grey;
+    size: 10px;
+}
+
+section.page.one > div > h1 {
+    font-size: 30pt;
+}
+
+section.page.two {
+    background-image: url(PLACE-2.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+}
+
+section.two {
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+div.card {
+    padding: 10px;
+    width: 250px;
+    min-height: 300pt;
+    background-color: gray;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+div.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 75pt;
+    background-color: greenyellow;
+    background-image: url(Screenshot\ 2024-07-17\ 193129.png);
+}
+
+section.page {
+    background-image: url(Screenshot\ 2024-07-19\ 093710.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    
+}
+
+@media (max-width: 767px) {
+    section.page.one {
+        background-image: url(wedding-photo.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    section.page.two {
+        background-image: url(PLACE.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    section.page{
+        background-image: url(REK.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
